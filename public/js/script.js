@@ -18,9 +18,33 @@
                 setPage('nav-home');
                 break;
         }
+
+        function convertFormToJSON(form) {
+            return $(form)
+                .serializeArray()
+                .reduce(function (json, { name, value }) {
+                    json[name] = value;
+                    return json;
+                }, {});
+        }
+
+
+        $('#submitButton').click(function () {
+            console.log('xx x xx xx SUCCESS ', convertFormToJSON('form#myForm'));
+            fetch("https://api.apispreadsheets.com/data/fMMLpGAFVKb1A3ph/", {
+                method: "POST",
+                body: JSON.stringify({data: convertFormToJSON('form#myForm')}),
+            }).then(res => {
+                if (res.status === 201) {
+                    window.location.href = window.location.href;
+                } else {
+                    console.log('xx x xx xx error ');
+                }
+            })
+        });
     });
 
-    function  setPage(className) {
+    function setPage(className) {
         $('li').removeClass("current");
         $("." + className).addClass("current");
     }
