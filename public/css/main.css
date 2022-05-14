@@ -1,0 +1,48 @@
+.text{
+ text-align: justify;
+}
+.logo{
+	padding: 30.5px 0;
+
+}
+.logo img{
+	width: 150px;
+}
+.inquiry {
+    margin: auto;
+    padding: 40px 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border: 1px solid #35363a;
+    border-radius: 10px;
+    text-align: center;
+}
+.inquiry h2 {
+    color: #35363a;
+    margin-bottom: 20px;
+}
+.inquiry label {
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+}
+.gallery{
+  margin-bottom: 35px;
+  border:1px solid #000000;
+}
+.header-top a:hover, .header-top span:hover{
+    color: #000000!important;
+}
+
+.logo-footer {
+    width: 200px;
+}
+
+.current > a {
+    color: #ffae42 !important;
+}
+
+
+
+
+
