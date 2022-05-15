@@ -2,11 +2,10 @@
  text-align: justify;
 }
 .logo{
-	padding: 30.5px 0;
-
+	padding: 23.365px 0;
 }
 .logo img{
-	width: 150px;
+	width: 200px;
 }
 .inquiry {
     margin: auto;
@@ -42,6 +41,9 @@
     color: #ffae42 !important;
 }
 
+.pull-right > nav.main-menu {
+    padding: 10px 0;
+}
 
 
 
